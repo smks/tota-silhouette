@@ -1,63 +1,74 @@
-[gd_scene load_steps=10 format=3 uid="uid://0mavaf5lyhbc"]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource type="Texture2D" uid="uid://xcglhkdshn6s" path="res://assets/Backgroundt.png" id="1"]
-[ext_resource type="PackedScene" path="res://src/Player.tscn" id="2"]
-[ext_resource type="Texture2D" uid="uid://b3dg4wmcdssxg" path="res://assets/rocks-foreground.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://cm3kwctnra1mj" path="res://assets/FireLight.png" id="5"]
-[ext_resource type="Script" path="res://src/CampsiteFireLight.gd" id="6"]
-[ext_resource type="Script" path="res://src/Main.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://dr6mudxix6div" path="res://assets/Torion.png" id="8"]
+[ext_resource path="res://assets/Backgroundt.png" type="Texture" id=1]
+[ext_resource path="res://src/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/rocks-foreground.png" type="Texture" id=3]
+[ext_resource path="res://assets/FireLight.png" type="Texture" id=5]
+[ext_resource path="res://src/CampsiteFireLight.gd" type="Script" id=6]
+[ext_resource path="res://src/Main.gd" type="Script" id=7]
+[ext_resource path="res://assets/Torion.png" type="Texture" id=8]
 
-[sub_resource type="CircleShape2D" id="9"]
+[sub_resource type="CircleShape2D" id=9]
 radius = 24.0208
 
-[sub_resource type="CanvasItemMaterial" id="8"]
+[sub_resource type="CanvasItemMaterial" id=8]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("7")
+script = ExtResource( 7 )
 
 [node name="bg" type="TextureRect" parent="."]
-texture = ExtResource("1")
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 1 )
 stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="YSort" type="Node2D" parent="."]
+[node name="YSort" type="YSort" parent="."]
 
-[node name="Player" parent="YSort" instance=ExtResource("2")]
+[node name="Player" parent="YSort" instance=ExtResource( 2 )]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="YSort"]
-position = Vector2(649, 335)
+position = Vector2( 649, 335 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="NPC" type="Sprite2D" parent="YSort/StaticBody2D"]
-position = Vector2(0, -38)
-scale = Vector2(2, 2)
-texture = ExtResource("8")
+[node name="NPC" type="Sprite" parent="YSort/StaticBody2D"]
+position = Vector2( 0, -38 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/StaticBody2D"]
-shape = SubResource("9")
+shape = SubResource( 9 )
 
 [node name="fg" type="TextureRect" parent="."]
-texture = ExtResource("3")
+margin_top = 371.0
+margin_right = 1280.0
+margin_bottom = 717.0
+texture = ExtResource( 3 )
 stretch_mode = 7
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-material = SubResource("8")
-color = Color(0.164706, 0.196078, 0.32549, 1)
+material = SubResource( 8 )
+color = Color( 0.164706, 0.196078, 0.32549, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="CampsiteFireLight" type="PointLight2D" parent="."]
-position = Vector2(644, 480)
-color = Color(0.913725, 0.423529, 0.231373, 1)
-energy = 1.5
-texture = ExtResource("5")
+[node name="CampsiteFireLight" type="Light2D" parent="."]
+position = Vector2( 644, 480 )
+texture = ExtResource( 5 )
 texture_scale = 1.2
-script = ExtResource("6")
+color = Color( 0.913725, 0.423529, 0.231373, 1 )
+energy = 1.5
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Tween" type="Tween" parent="CampsiteFireLight"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-editor_description = ""
-script = null
