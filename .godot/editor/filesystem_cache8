@@ -1,0 +1,16 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1679507038
+default_env.tres::Environment::-1::1679506944::0::1::::<><>::
+icon.png::CompressedTexture2D::817220532180847731::1679502969::1679507039::1::::<><>::
+::res://assets/::1679505774
+Backgroundt.png::CompressedTexture2D::1618856488144563740::1679503483::1679507039::1::::<><>::
+FireLight.png::CompressedTexture2D::5673556660561229689::1679504878::1679507039::1::::<><>::
+Player.png::CompressedTexture2D::2980033450087179945::1679503422::1679507039::1::::<><>::
+rocks-foreground.png::CompressedTexture2D::4358318702946992988::1679401714::1679507039::1::::<><>::
+Torion.png::CompressedTexture2D::8417232616588995545::1679505730::1679507039::1::::<><>::
+::res://src/::1679506944
+CampsiteFireLight.gd::GDScript::-1::1679505549::0::1::::<>Light2D<>::
+Main.gd::GDScript::-1::1679506913::0::1::::<>RefCounted<>::
+Main.tscn::PackedScene::-1::1679506944::0::1::::<><>::res://assets/Backgroundt.png<>res://src/Player.tscn<>res://assets/rocks-foreground.png<>res://assets/FireLight.png<>res://src/CampsiteFireLight.gd<>res://src/Main.gd<>res://assets/Torion.png
+Player.gd::GDScript::-1::1679504650::0::1::::<>KinematicBody2D<>::
+Player.tscn::PackedScene::-1::1679506914::0::1::::<><>::res://assets/Player.png<>res://src/Player.gd
