@@ -1,0 +1,78 @@
+Artwork been done?,Item number,"Unique Identifier, used internally by game",Label of the item shown in game,Type of item in the game,Description shown to the player of what the item is,How many times the item can be used before it is discarded,,How many health points are added/deducted from the player's health,How many stamina points are added/deducted from the player's health,Can this item be used by the player in the inventory screen?,Can this item be discarded or does it need to always exist?,Can this item be combined?,Can this item be equipped?,What to do with item once used entirely,"Where can this be item taken from. E.g. bush, chest, animal, bird",Location the item resides,"How rare is this item? (none, common, uncommon, rare, very_rare, legendary)","How rare is this item? (none, common, uncommon, rare, very_rare, legendary)"
+Asset done?,item #,id,name,type,description,usage_left,days_left,health_spend (-1K to 1K),stamina_spend (-1K to 1K),is_usable?,is_discardable?,is_combinable,is_equippable,state_after_use,found_in,location,rarity,weighting
+N,1,BirdFeatherDark,Bird Feather Dark,Collectable,The feather of a Carrion bird.,1,-1,0,0,N,Y,N,N,discard,bird,all,common,0.1
+N,2,BirdFeatherLight,Bird Feather Light,Collectable,The feather of the pigeon.,1,-1,0,0,N,Y,N,N,discard,bird,all,common,0.1
+N,3,BirdFeatherMagpie,Bird Feather Magpie,Collectable,The feather of the magpie.,1,-1,0,0,N,Y,N,N,discard,bird,all,common,0.1
+N,4,FlowerChamomile,Chamomile,Consumable,Chamomile is a herb known to improve sleep and make you feel more at ease.,1,3,115,0,Y,Y,Y,N,discard,bush,meadows,uncommon,0.1
+N,5,FlowerDaisy,Daisy,Consumable,The white petalled flower is brought to bring good luck once placed in ones hair.,1,3,110,100,Y,Y,Y,N,discard,bush,meadows,common,0.1
+N,6,FlowerHibiscus,Hibiscus,Consumable,"Known for their large, colorful red flowers. These blossoms can make a decorative addition but they also have medicinal uses.",1,3,90,70,Y,Y,Y,N,discard,bush,meadows,uncommon,0.1
+N,7,FlowerLavender,Lavender,Consumable,A flowering plant in the mint family that's easily identified by its sweet floral scent. The scent can aid with sleep.,1,3,80,30,Y,Y,Y,N,discard,bush,meadows,uncommon,0.1
+N,8,FlowerLily,Lily,Consumable,White and Pink lily flowers with a strong sweet smell.,1,3,0,200,Y,Y,N,N,discard,bush,meadows,uncommon,0.1
+N,9,SmilodonTooth,Smilodon Tooth,Collectable,A tooth extracted from the deadly Smilodon. Regarded as proof of courage and bravery to others.,1,-1,0,0,Y,N,N,N,discard,none,none,none,0.1
+N,10,BerriesBittersweet,Bittersweet,Consumable,"Toxic nightshade that can cause serious illness. Found in hedgerows and gardens, it has purple flowers with yellow stamens.",1,2,-750,0,Y,Y,N,N,discard,bush,forest,rare,0.1
+N,11,BerriesBlackberries,Blackberries,Consumable,"Harvested wild edible blackberries usually found along the edges of wooded areas, and sometimes out in the open.",1,2,186,62,Y,Y,Y,N,discard,bush,forest,uncommon,0.1
+N,12,BerriesIvy,Ivy (Poisonous),Consumable,The berries are toxic in large quantities and not regarded as edible.,1,3,-200,-200,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,13,BerriesDeadlyNightshade,Deadly Nightshade,Consumable,A poisonous perennial herbaceous plant that is toxic once ingested with unexpected side effects.,1,3,-1000,0,Y,Y,N,N,discard,bush,forest,rare,0.1
+N,14,BerriesRosehips,Rosehips,Consumable,Rosehip is part of the fruit that grows on the blossom of a wild rose.,1,2,0,300,Y,Y,N,N,discard,bush,forest,common,0.1
+N,15,BerriesStrawberries,Strawberries,Consumable,"Red, heart-shaped, and studded with small seeds. Great for stamina and health.",1,2,260,260,Y,Y,Y,N,discard,bush,meadows,uncommon,0.1
+N,16,BerriesUnknown,Berries?,Consumable,A collection of unknown berries. It's up to you to risk it.,1,2,0,0,Y,Y,Y,N,discard,bush,meadows,uncommon,0.1
+N,17,FishSalmonCooked,Fish Salmon Cooked,Consumable,Cooked fillet of fresh Salmon caught from the Valleys.,1,1,400,100,Y,Y,N,N,discard,pond,valleys,none,0.1
+N,18,FishSalmonRaw,Fish Salmon Raw,Consumable,Raw fillet of fresh Salmon caught from the Valleys.,1,1,200,50,Y,Y,N,N,discard,pond,valleys,rare,0.1
+N,19,FishTroutCooked,Fish Trout Cooked,Consumable,Cooked trout that lives in freshwater ponds and rivers exclusively.,1,1,250,50,Y,Y,N,N,discard,pond,valleys,none,0.1
+N,20,FishTroutRaw,Fish Trout Raw,Consumable,Raw trout that lives in freshwater ponds and rivers exclusively.,1,1,125,25,Y,Y,N,N,discard,pond,valleys,uncommon,0.1
+N,21,MushroomDeathcap,Mushroom Deathcap,Consumable,An extremely poisonous mushroom with no known antidote.,1,4,-1000,0,Y,Y,N,N,discard,bush,forest,rare,0.1
+N,22,MushroomField,Mushroom Field,Consumable,"Edible mushroom that mostly grow in pasture land, and particularly seem to like field where sheep have been. ",1,4,265,0,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,23,MushroomGreyOyster,Mushroom Grey Oyster,Consumable,Fairly common edible mushroom. Can be found in large numbers at any time of year.,1,4,50,195,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,24,MushroomInkCap,Mushroom Ink Cap,Consumable,On dead wood (often buried) from deciduous trees. Known to be poisonous.,1,4,-200,-400,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,25,MushroomWebCap,Mushroom Web Cap,Consumable,A fairly rare but deadly poisonous mushroom. It is found from late summer to early winter in coniferous woodland.,1,4,-400,-200,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,26,MushroomTruffle,Mushroom Truffle,Consumable,"A truffle is a type of fungi that is found on the roots of trees. Unlike the common mushroom varieties, truffles grow entirely underground on the roots of trees.",1,4,1000,1000,Y,Y,N,N,discard,bush,forest,legendary,0.1
+N,27,MushroomUnknown,Mushroom?,Consumable,"An unknown Mushroom, could be good or bad. It's up to you to risk it.",1,4,0,0,Y,Y,N,N,discard,bush,forest,legendary,0.1
+N,28,GingerRoot,Ginger Root,Consumable,"A spice used to aid digestion, reduce nausea, and help fight flu and colds",1,7,250,0,Y,Y,Y,N,discard,bush,meadows,rare,0.1
+N,29,HerbAloeVera,Aloe Vera,Consumable,"Used for healing and softening of the skin. A treatment for many maladies, including constipation and skin disorders.",1,6,250,50,Y,Y,Y,N,discard,bush,forest,rare,0.1
+N,30,HerbBlueFenugreek,Blue Fenugreek,Consumable,Herb that grows in the mountains and has a significant positive effect on your health.,1,5,150,100,Y,Y,N,N,discard,bush,mountains,uncommon,0.1
+N,31,HerbChicory,Chicory,Consumable,Comes from a plant with bright blue flowers that supports gut health and better digestion.,1,5,100,150,Y,Y,N,N,discard,bush,forest,common,0.1
+N,32,HerbGoosefoot,Goosefoot,Consumable,A medicinal weed used for bladders stones and swelling.,1,4,50,200,Y,Y,N,N,discard,bush,forest,common,0.1
+N,33,HerbHorseradish,Horseradish,Consumable,Horseradish can be used a condiment or for medication for infections.,1,5,0,250,Y,Y,N,N,discard,bush,forest,common,0.1
+N,34,HerbMugwart,Mugwart,Consumable,"Mugwort root can be used as a tonic, to boost energy and help with skin irritation.",1,4,300,0,Y,Y,N,N,discard,bush,forest,uncommon,0.1
+N,35,HerbNettles,Nettles,Consumable,A herbaceous perennial flowering plant great for stomach aches and inflammation.,1,4,0,300,Y,Y,N,N,discard,bush,forest,common,0.1
+N,36,InsectAnt,Ant,Consumable,"Ants, if eaten raw will have a sour/tangy taste to them.",1,2,90,0,Y,Y,Y,N,discard,tree,forest,common,0.1
+N,37,InsectBeetle,Beetle,Consumable,Big and bold deadwood lovers. These insects need trees to feed and breed.,1,2,45,45,Y,Y,Y,N,discard,tree,forest,uncommon,0.1
+N,38,MeatBisonLoinCooked,Bison Loin Cooked,Consumable,"Dense and cooked red meat of Wild Bison, low in fat and rich in flavour.",1,1,240,120,Y,Y,N,N,discard,animal,none,none,0.1
+N,39,MeatBisonLoinRaw,Bison Loin Raw,Consumable,"Dense and raw red meat of Wild Bison, low in fat and rich in flavour.",1,1,150,60,Y,Y,N,N,discard,animal,none,none,0.1
+N,40,MeatBoarLoinCooked,Boar Loin Cooked,Consumable,"A sweet, nutty and intense flavoured cooked Wild Boar loin.",1,1,200,60,Y,Y,N,N,discard,animal,none,none,0.1
+N,41,MeatBoarLoinRaw,Boar Loin Raw,Consumable,"A sweet, nutty and intense flavoured raw Wild Boar loin.",1,1,75,30,Y,Y,N,N,discard,animal,none,none,0.1
+N,42,MeatIbexLoinCooked,Ibex Loin Cooked,Consumable,Cooked and lean loin of the wild mountain goat.,1,1,160,40,Y,Y,N,N,discard,animal,none,none,0.1
+N,43,MeatIbexLoinRaw,Ibex Loin Raw,Consumable,Raw and lean loin of the wild mountain goat.,1,1,50,20,Y,Y,N,N,discard,animal,none,none,0.1
+N,44,MeatMammothLoinCooked,Mammoth Loin Cooked,Consumable,Very fatty cooked meat steak of the Wooly mammoth.,1,1,600,280,Y,Y,N,N,discard,animal,none,none,0.1
+N,45,MeatMammothLoinRaw,Mammoth Loin Raw,Consumable,Very fatty raw meat steak of the Wooly mammoth.,1,1,350,140,Y,Y,N,N,discard,animal,none,none,0.1
+N,46,MeatRabbitLoinCooked,Rabbit Loin Cooked,Consumable,Intensely flavored and gamier cooked rabbit loin.,1,1,100,20,Y,Y,N,N,discard,animal,none,none,0.1
+N,47,MeatRabbitLoinRaw,Rabbit Loin Raw,Consumable,Intensely flavored and gamier raw rabbit loin.,1,1,25,10,Y,Y,N,N,discard,animal,none,none,0.1
+N,48,MeatRhinoLoinCooked,Rhino Loin Cooked,Consumable,Tougher cooked loin of the Wooly Rhino.,1,1,440,220,Y,Y,N,N,discard,animal,none,none,0.1
+N,49,MeatRhinoLoinRaw,Rhino Loin Raw,Consumable,Tougher raw loin of the Wooly Rhino.,1,1,275,110,Y,Y,N,N,discard,animal,none,none,0.1
+N,50,MeatVenisonLoinCooked,Venison Loin Cooked,Consumable,Cooked flesh of deer. It has more vitamins with low calories and also reffered as nutrient dense meat among all.,1,1,140,40,Y,Y,N,N,discard,animal,none,none,0.1
+N,51,MeatVenisonLoinRaw,Venison Loin Raw,Consumable,Raw flesh of deer. It has more vitamins with low calories and also reffered as nutrient dense meat among all.,1,1,50,20,Y,Y,N,N,discard,animal,none,none,0.1
+N,52,Moss,Moss,Consumable,"Non-flowering plants which produce spores and have stems and leaves, but don't have true roots.",1,7,10,10,Y,Y,N,N,discard,bush,"forest,moorlands,meadows",common,0.1
+N,53,NutsAcorns,Acorns,Consumable,Nut of the oak tree. Best boiled first to remove bitterness and stomach upset.,1,7,150,50,Y,Y,N,N,discard,tree,forest,common,0.1
+N,54,NutsHazelnuts,Hazelnuts,Consumable,"Sweet, and incredibly nutritious edible kernels.",1,7,70,180,Y,Y,N,N,discard,tree,forest,common,0.1
+N,55,Pear,Pear,Consumable,"A mild, sweet fruit with a yellowy green skin and soft white flesh inside.",1,2,150,120,Y,Y,Y,N,discard,bush,"forest,meadows",uncommon,0.1
+N,56,PotatoCooked,Potato Cooked,Consumable,A cooked tuber vegetable ready to eat.,1,2,120,280,Y,Y,Y,N,discard,chest,none,none,0.1
+N,57,PotatoRaw,Potato Raw,Consumable,A raw tuber vegetable good for cooking.,1,5,-120,-280,Y,Y,N,N,discard,bush,"forest,meadows",common,0.1
+N,58,Seeds,Seeds,Consumable,A handful of seeds good for a burst of health and strength.,1,7,300,300,Y,Y,N,N,discard,chest,"forest,meadows",very_rare,0.1
+N,59,WaterskinEmpty,Waterskin Empty,Container,"An empty receptacle used to hold water. Normally made of a sheep or goat skin, it retains water naturally.",0,-1,0,0,Y,N,N,N,discard,none,none,none,0.1
+N,60,WaterskinFull,Waterskin Full,Container,"A full receptacle used to hold water. Normally made of a sheep or goat skin, it retains water naturally.",3,-1,100,100,Y,N,N,N,WaterskinEmpty,none,none,none,0.1
+N,61,Band,Band,Resource,"A flat, thin stripped loop of material, used as a fastener, for reinforcement, or as decoration",1,-1,0,0,Y,Y,N,N,discard,chest,none,none,0.1
+N,62,Clay,Clay,Resource,"A soft, loose, earthy material usually found where streams or rivers once flowed.",1,-1,0,0,Y,Y,N,N,discard,chest,valleys,uncommon,0.1
+N,63,Firewood,Firewood,Resource,Wood that is burnt as fuel that is typically found in woodlands.,1,-1,0,0,Y,Y,N,N,discard,tree,forest,common,0.1
+N,64,Flint,Flint,Resource,"A piece of flint, fpondd or grounded to form a tool or weapon.",1,-1,0,0,Y,Y,N,N,discard,chest,moorlands,common,0.1
+N,65,Rock,Rock,Resource,Rock fragment that can be grounded down to form different shapes.,1,-1,0,0,Y,Y,N,N,discard,bush,moorlands,common,0.1
+N,66,RockAxeHead,Rock Axe Head ,Resource,A well shaped flat rock used as part of an axe.,1,-1,0,0,Y,Y,N,N,discard,chest,none,rare,0.1
+N,67,RockSpearTip,Rock Spear Tip,Resource,A very sharp rock tip used as part of a spear.,1,-1,0,0,Y,Y,N,N,discard,chest,none,rare,0.1
+N,68,Sinew,Sinew,Resource,A piece of tough fibrous tissue uniting muscle to bone; a tendon or ligament.,1,-1,0,0,Y,Y,N,N,discard,chest,none,common,0.1
+N,69,Stick,Stick,Resource,Stick used as a shaft for weapons.,1,-1,0,0,Y,Y,N,N,discard,tree,forest,common,0.1
+N,70,TreeResin,Tree Resin,Resource,Sticky substance used as a glue.,1,-1,0,0,Y,Y,N,N,discard,bush,forest,common,0.1
+N,71,SmallAxe,Small Axe,Weapon,A small axe weapon that can cut preys and obstacles.,50,-1,0,0,Y,Y,N,Y,discard,chest,none,very_rare,0.1
+N,72,Spear,Spear,Weapon,A long spear weapon used to charge at enemies from afar.,50,-1,0,0,Y,Y,N,Y,discard,chest,none,very_rare,0.1
+N,73,InsectMeal,Insect Meal,Consumable,A mixture of bugs.,1,2,135,0,Y,Y,N,N,discard,chest,none,very_rare,0.1
+N,74,BerryMix,Berry Mix,Consumable,A mixture of berries.,1,2,500,250,Y,Y,N,N,discard,chest,none,very_rare,0.1
+N,75,MushroomMix,Mushroom Mix,Consumable,A mixture of mushrooms.,1,4,450,300,Y,Y,N,N,discard,chest,none,very_rare,0.1
+N,76,HerbalMix,Herbal Mix,Consumable,A mixture of herbs.,1,5,400,350,Y,Y,N,N,discard,chest,none,very_rare,0.1

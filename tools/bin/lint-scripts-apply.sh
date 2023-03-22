@@ -1,0 +1,1 @@
+gdformat $(find . -name '*.gd' ! -path "./addons/*" ! -path "./wwise/*") 
