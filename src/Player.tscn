@@ -9,6 +9,7 @@ height = 10.0
 
 [sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
+render_mode unshaded;
 
 void fragment() {
 	float alpha = texture(TEXTURE, UV).a;
@@ -41,13 +42,13 @@ void fragment() {
 	// If the pixel's value is lower than the Mask's output color, it means the
 	// mask is being occluded, so we draw the silhouette instead.
 	if (screen_color.r < occlusion_match) {
-			COLOR.rgb = silhouette_color.rgb;
+		COLOR.rgb = silhouette_color.rgb;
 	}
 }"
 
 [sub_resource type="ShaderMaterial" id=7]
 shader = SubResource( 6 )
-shader_param/silhouette_color = Color( 0.0235294, 0.145098, 1, 1 )
+shader_param/silhouette_color = Color( 0, 0, 0, 1 )
 shader_param/occlusion_match = 100.0
 
 [sub_resource type="ViewportTexture" id=5]
