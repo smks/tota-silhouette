@@ -12,9 +12,9 @@ code = "shader_type canvas_item;
 
 void fragment() {
 	float alpha = texture(TEXTURE, UV).a;
-	COLOR.r = 10.0 * alpha;
-	COLOR.g = 10.0 * alpha;
-	COLOR.b = 10.0 * alpha;
+	COLOR.r = 100.0 * alpha;
+	COLOR.g = 100.0 * alpha;
+	COLOR.b = 100.0 * alpha;
 	COLOR.a = alpha;
 }"
 
@@ -29,7 +29,7 @@ code = "shader_type canvas_item;
 
 // Allows you to control the output color in the Shader Params in the Inspector.
 uniform vec4 silhouette_color : hint_color;
-uniform float occlusion_match = 0.5;
+uniform float occlusion_match = 100.0;
 
 void fragment() {
 	// We sample the screen texture at this point, which has the Mask node's pixels
@@ -48,7 +48,7 @@ void fragment() {
 [sub_resource type="ShaderMaterial" id=7]
 shader = SubResource( 6 )
 shader_param/silhouette_color = Color( 0.0235294, 0.145098, 1, 1 )
-shader_param/occlusion_match = 1.0
+shader_param/occlusion_match = 100.0
 
 [sub_resource type="ViewportTexture" id=5]
 viewport_path = NodePath("Viewport")
